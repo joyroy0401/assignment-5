@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">   
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">   
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <!--Header-->
+    <header class="container">
+        <nav class="navbar navbar-expand-lg mt-3">
+            <div class="container-fluid">
+              <a class="navbar-brand title" href="#">Cooking Master</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end menu" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="#">Recipes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!--Food part-->
+
+    <main class="container mt-3">
+        <section class="search-section text-center">
+
+            <div class="input-width input-group mb-3">
+                <input id="search-text" type="text" class="form-control" placeholder="Search for Meal..."
+                    aria-label="Recipient's name" aria-describedby="inputButton">
+                <button class="btn btn-outline-secondary btn-dark text-warning" type="button"
+                    id="inputButton">Search</button>
+            </div>
+
+        </section>
+        <div id="details" class="d-flex justify-content-center">
+
+        </div>
+        <div id="allFood">
+
+        </div>
+        <section class="d-flex justify-content-center">
+            <div id="invalidFood">
+                <br>
+                <h2 class=" font-weight-bold message">Sorry, This food is not available. Maybe next time!!! &#128512</h2>
+            </div>
+
+        </section>
+    </main>
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!--Main JavaScript-->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
